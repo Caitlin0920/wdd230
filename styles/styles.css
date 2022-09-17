@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mukta+Malar:wght@300&family=Prata&display=swap');
+
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+#top-background {
+    background-color: rgb(183, 189, 236);
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 25px;
+    display: flex;
+    margin-top: 1em;
+}
+img {
+    width: 130px;
+    margin: 2em 0 2em 5em;
+    box-shadow: 2px 2px 5px gray;
+}
+#top-background h1{
+    margin: auto;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 40px;
+    font-family: Prata, "Times New Roman", Times;
+}
+main {
+    text-align: left;
+}
+main h2 {
+    margin-left: 1em;
+    font-family: Prata, "Times New Roman", Times;
+}
+main ul {
+    font-family: Montserrat, "Mukta Malar", sans-serif;
+    font-weight: bold;
+}
+a {
+    color: blue;
+}
+.line {
+    height: 1px;
+    background-color: gray;
+}
+main p {
+    font-family: Montserrat, "Mukta Malar", sans-serif;
+}
+#bottom-background {
+    background-color: rgb(183, 189, 236);
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 2em 2em;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer h3 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+footer h4 {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#updated-time {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
