@@ -2,7 +2,9 @@
 
 body {
     margin: 0 auto;
-    max-width: 1000px;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 1600px;
     text-align: center;
 }
 #top-background {
@@ -13,8 +15,8 @@ body {
     margin-top: 1em;
 }
 img {
-    width: 130px;
-    margin: 2em 0 2em 5em;
+    width: 25%;
+    margin: 2em 2em;
     box-shadow: 2px 2px 5px gray;
 }
 #top-background h1{
@@ -57,10 +59,12 @@ main p {
     grid-template-columns: repeat(4, 1fr);
 }
 footer h3 {
-    grid-column: 2/4;
+    padding-top: 10px;
+    grid-column: 1/5;
     grid-row: 1/2;
 }
 footer h4 {
+    padding-top: 10px;
     margin-right: 10px;
     display: flex;
     justify-content: flex-end;
@@ -68,8 +72,9 @@ footer h4 {
     grid-row: 2/3;
 }
 #updated-time {
+    padding-top: 10px;
     display: flex;
     justify-content: flex-start;
-    grid-column: 3/4;
+    grid-column: 3/5;
     grid-row: 2/3;
 }

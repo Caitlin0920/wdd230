@@ -1,0 +1,15 @@
+@media (min-width: 32.5em) {
+    #top-background, #bottom-background {
+        background-color: rgb(170, 233, 240);
+        display: block;
+    }
+    #top-background {
+        padding-bottom: 1em;
+    }
+    img {
+        width: 30%;
+    }
+    #bottom-background {
+        color: black;
+    }
+}
