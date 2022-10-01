@@ -19,7 +19,8 @@ header {
 }
 nav {
     display: flex;
-    flex-direction: row;
+	justify-content: center;
+	padding: 10px;
 }
 nav div {
     flex: 1 1 auto;
@@ -40,22 +41,16 @@ main {
 }
 
 /* hoome page */
-#logo {
+
+.grid-box {
+    display:block;
+}
+.logo {
     width: 30%;
     margin: 10px 10px;
     border-radius: 100%;
     box-shadow: 10px 10px 5px lightgray;
 }
-/* #grid-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-#logo-box {
-    grid-column: 1/2;
-}
-#home-list-box {
-    grid-column: 2/3;
-} */
 
 /* target audience */
 .persona-grid-box {
@@ -113,4 +108,18 @@ footer {
     padding-bottom: 2px;
     background-color: #DED9DF;
     color: #5F5365;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    nav {
+		flex-direction: row;
+	}
 }
