@@ -35,6 +35,9 @@ nav a:hover {
     color: white;
     background-color: #5F5365;
 }
+main {
+    margin: auto 1em;
+}
 
 /* hoome page */
 #logo {
@@ -69,11 +72,40 @@ nav a:hover {
     grid-column: 1/3;
 }
 .infor-box {
-    background-color: #5F5365;
+    background-color: #806E87;
     color: white;
     border-radius: 25px;
     grid-column: 3/8;
 }
+
+/* color scheme */
+table, th, td {
+    border: 1px solid;
+}
+table {
+    margin: 1em auto;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.primary {
+    background-color: #DED9DF;
+}
+.secondary {
+    background-color: #806E87;
+}
+.accent1 {
+    background-color: #5F5365;
+}
+
+/* Typography */
+#example-box {
+    background-color: #806E87;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
 
 footer {
     text-align: center;
