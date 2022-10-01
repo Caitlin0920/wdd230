@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Montserrat:wght@200&display=swap');
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body h1{
+    font-family: Alkalami, "Abyssinica SIL", Georgia;
+}
+body p, ul li {
+    font-family: Arial, Montserrat, Verdana;
+}
+header {
+    background-color: #DED9DF;
+    color: #5F5365;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+nav div {
+    flex: 1 1 auto;
+    font-size: 1.1em;
+}
+nav a {
+    display: block;
+    color: #5F5365;
+    text-decoration: none;
+    
+}
+nav a:hover {
+    color: white;
+    background-color: #5F5365;
+}
+
+/* hoome page */
+#logo {
+    width: 30%;
+    margin: 10px 10px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 5px lightgray;
+}
+/* #grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#logo-box {
+    grid-column: 1/2;
+}
+#home-list-box {
+    grid-column: 2/3;
+} */
+
+/* target audience */
+.persona-grid-box {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 1em auto;
+}
+.persona-photo {
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 80%;
+    border-radius: 100%;
+    box-shadow: 6px 6px 3px lightgray;
+    grid-column: 1/3;
+}
+.infor-box {
+    background-color: #5F5365;
+    color: white;
+    border-radius: 25px;
+    grid-column: 3/8;
+}
+
+footer {
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #DED9DF;
+    color: #5F5365;
+}
