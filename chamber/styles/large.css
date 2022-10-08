@@ -70,4 +70,12 @@
         margin-top: 5px;
         display: block;
     }
+
+    /* footer */
+    .copyright-box {
+        display: flex;
+    }
+    .copyright-box p {
+        flex: 1 1 auto;
+    }
 }
