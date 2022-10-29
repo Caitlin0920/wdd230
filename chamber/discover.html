@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Chamber of Commerce Project</title>
+</head>
+<body>
+<header>
+    <a href="index.html" class="header-logo">
+        <img src="images/smile.png" alt="smile">
+    </a>
+    <h1>Timbuktu</h1>
+    <p>Chasmber of Commerce</p>
+    <a class="fb-icon" href="https://www.facebook.com/">
+        <img class="icon-img" src="images/facebook.png" alt="facebook logo">
+    </a>
+    <a class="insta-icon" href="https://www.instagram.com/">
+        <img class="icon-img" src="images/instagram.png" alt="instagram">
+    </a>
+    <nav class="nav-box">
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="date"></div>
+</header>
+<main id="discover-main">
+    <h1>Discover - Taiwan<img src="images/taiwan_icon.png" alt="taiwan" id="taiwan-icon"></h1>
+    <div class="discover-grid-box">
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/taipei.jpg" alt="Taipei 101">
+        </picture>
+        <div class="right-p">
+            <h2>Taipei 101</h2>
+            <p>The capital of Taiwan is a marvelous place to visit, with a plethora of things for visitors to see and do.
+                It is not only the political and economic hub of the island, but also the cultural one, as there is a lively arts and culture scene.
+                <br><br>
+                With an intoxicating mix of old and new to be found in the delicious food and stunning architecture, it is a captivating city to visit.
+                Old temples are located amidst the skyscrapers, and the towering Taipei 101 actually used to be the tallest building in the world.
+            </p>
+        </div>
+    </div>
+    <div class="discover-grid-box">
+        <picture class="right-img">
+            <img src="images/placeholder.jpg" data-src="images/lukang.jpg" alt="Lukang">
+        </picture>
+        <div class="left-p">
+            <h2>Lukang</h2>
+            <p>The second oldest town on the island is a mesmerising place to visit, and it is particularly renowned for its delicious local cuisine and stunning architecture.
+                <br><br>
+                Located in the northwest of the country, it was once an important seaport and trading center, although its standing has long since declined.
+                Thankfully that has meant that its historic buildings remain intact and there are remarkably over two hundred temples for tourists to visit, with Longshan and Matzu being among the most popular.
+            </p>
+        </div>
+    </div>
+    <div class="discover-grid-box">
+        <picture class="left-img">
+            <img src="images/placeholder.jpg" data-src="images/sun_moon_lake.jpg" alt="Sun Moon Lake">
+        </picture>
+        <div class="right-p">
+            <h2>Sun Moon Lake</h2>
+            <p>The delightfully named Sun Moon Lake is the largest body of water in the country and is a popular tourist destination amongst locals and foreigners alike.
+                As such there are loads of hotels and resorts located along the lake’s shores and there are numerous restaurants, shops and bars that cater to the visitor’s every need.
+                <br><br>
+                With lots of outdoor activities on offer, you can go sailing on the lake, go for a delightful hike or bike ride in the hills surrounding it or relax on a boat trip across its tranquil waters and enjoy the breathtaking scenery.
+                In addition to the stunning nature, there are some great temples for visitors to visit and there is also a cable car ride that offers up unforgettable views of the lake below.
+            </p>
+        </div>
+    </div>
+    <div class="discover-grid-box">
+        <picture class="right-img">
+            <img src="images/placeholder.jpg" data-src="images/alishan_national_scenic_area.jpg" alt="Alishan National Scenic Area">
+        </picture>
+        <div class="left-p">
+            <h2>Alishan National Scenic Area</h2>
+            <p>A wild and wonderful place, the Alishan National Scenic Area is very mountainous and actually contains twenty-five mountains that tower to a height of two thousand meters or more.
+                Exploring the hills, valleys, waterfalls and forests is a magical affair, and the scenery is stupendous to behold.
+                <br><br>
+                There are numerous trails and paths that will take you to some of the best viewpoints.
+                A great way to see a lot of the reserve in one go is to take the Alishan Forest Railway, which snakes its way through forests and along mountainsides before stopping off at Fenqihu, a picturesque village with the ruins of a Shinto temple.
+            </p>
+        </div>
+    </div>
+    <div class="discover-grid-box">
+        <picture class="left-img">
+            <img src="images/placeholder.jpg" data-src="images/taroko_national_park.jpg" alt="Taroko National Park">
+        </picture>
+        <div class="right-p">
+            <h2>Taroko National Park</h2>
+            <p>Full of beautiful nature and incredible landscapes, this national park takes its name from that of the impressive gorge that runs through it, and as such it is well worth checking out when in Taiwan.
+                Carved out over centuries and millennia by the winding Liwu River, it is Taroko Gorge that is the undoubted highlight of the area, along with the steep valleys, mountains and more features throughout the park.
+                <br><br>
+                With a number of great outdoor activities that visitors can enjoy, you can be river rafting one minute, hiking through the canyons the next and be bathing in the Baiyang Waterfalls later that same day.
+            </p>
+        </div>
+    </div>
+    <p class="source-link">(All sources are from <a href="https://www.touropia.com/best-places-to-visit-in-taiwan/">"10 Best Places to Visit in Taiwan"</a>)</p>
+    <h1>Demographics</h1>
+    <p class="demographics-margin"><strong class="p-larger">Population: </strong>23,572,052</p>
+    <p class="demographics-margin"><strong class="p-larger">Languages: </strong>Mandarin Chinese (official), Taiwanese (Min Nan), Hakka dialects, approximately 16 indigenous languages.</p>
+    <p class="demographics-margin"><strong class="p-larger">Religions: </strong>Buddhist 35.3%, Taoist 33.2%, Christian 3.9%, folk religion (includes Confucian) approximately 10%, none or unspecified 18.2% (2005 est.)</p>
+    <p class="source-link">(Demographics sources are from <a href="https://www.indexmundi.com/taiwan/demographics_profile.html">"Taiwan Demographics Profile"</a>)</p>
+</main>
+<footer>
+    <div class="footer-grid">
+        <img class="footer-logo" src="images/smile.png" alt="smile">
+        <h3 class="footer-name">Timbuktu Chamber of Commerce</h3>
+        <p class="address">10 Rue De La Paix Timbuktu, Mali 999</p>
+        <p class="email">info@timbuktucc.org</p>
+        <p class="number">+(223) 2070-2300</p>
+        <a class="location" href="https://www.google.com/maps">Location Map</a>
+    </div>
+    <div class="line-box"></div>
+    <div>
+        <p>&copy;2022 | Yun-Ting Chang | WDD230 Project | Last Modification: <span id="updated-time"></span> | Last visited: <span id="last-visited"></span></p>
+    </div>
+</footer>
+<script src="scripts/script.js"></script>
+<script src="scripts/lazyload.js"></script>
+</body>
+</html>

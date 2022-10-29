@@ -13,9 +13,11 @@ header {
     align-items: center;
 }
 .header-logo {
-    width: 75px;
-    margin: 5px 5px;
     grid-row: 1/3;
+}
+.header-logo img {
+    width: 75px;
+    margin: 10px 10px;
 }
 header h1 {
     margin-bottom: -5px;
@@ -79,7 +81,7 @@ header h4 {
 main {
     margin: 0 1em;
 }
-main div {
+.home-div, .spot1, .spot2, .spot3 {
     margin: 10px auto;
     height: auto;
     background-color: rgb(255, 250, 250);
@@ -97,7 +99,7 @@ main div {
     color: rgb(255, 250, 250);
     background-color: rgb(229, 77, 102);
 }
-.hero { 
+#hero {
     height: 100%;
     position: relative;
 }
@@ -135,12 +137,13 @@ main div {
     font-size: 25px;
 }
 #line {
+    margin-left: 5%;
     height: 1px;
     width: 90%;
     background-color: gray;
     border-style: none;
 }
-.spotlight-box {
+#spotlight-box {
     display: inline-block;
     height: 100%;
 }
@@ -148,8 +151,36 @@ main div {
     width: 95%;
     height: 100%;
 }
-.spot3, .join {
+.spot3, #join {
     display: none;
+}
+
+/* discover main*/
+#taiwan-icon {
+    height: 25px;
+}
+.discover-grid-box {
+    display: block;
+    padding-bottom: 2px;
+    margin: 5% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.discover-grid-box picture img {
+    width: 100%;
+}
+.right-p, .left-p {
+    margin: 0 10% 10% 10%;
+}
+.source-link {
+    text-align: center;
+}
+.p-larger {
+    font-size: 20px;
+}
+.demographics-margin {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* footer*/
@@ -168,35 +199,4 @@ footer img {
     margin: 5px 2px;
     height: 1px;
     background-color: gray;
-}
-.copyright-box {
-    display: grid;
-    grid-template-rows: repeat(3, 30px);
-    grid-template-columns:  1fr 1fr;
-}
-.copyright {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    text-align: right;
-    padding-right: 30px;
-}
-.name {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    text-align: left;
-    padding-right: 10px;
-}
-.project {
-    grid-row: 2/3;
-    grid-column: 1/3;
-}
-.updated {
-    grid-row: 3/4;
-    grid-column: 1/2;
-    text-align: right;
-}
-.updated-time {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    text-align: left;
 }

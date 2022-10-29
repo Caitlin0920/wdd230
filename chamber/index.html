@@ -11,7 +11,9 @@
 </head>
 <body>
     <header>
-        <img class="header-logo" src="images/smile.png" alt="smile">
+        <a href="index.html" class="header-logo">
+            <img src="images/smile.png" alt="smile">
+        </a>
         <h1>Timbuktu</h1>
         <p>Chasmber of Commerce</p>
         <a class="fb-icon" href="https://www.facebook.com/">
@@ -23,7 +25,7 @@
         <nav class="nav-box">
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
@@ -33,7 +35,7 @@
     </header>
     <main>
         <p id="banner"></p>
-        <div class="hero">
+        <div class="home-div" id="hero">
             <picture>
                 <source srcset="images/wdd230-org600.jpg" media="(min-width: 600px) and (max-width: 899px)">
                 <source srcset="images/wdd230-org800.jpg" media="(min-width: 900px)">
@@ -41,12 +43,12 @@
             </picture>
             <div class="hero-button">Join The Chamber</div>
         </div>
-        <div class="event">
+        <div class="home-div" id="event">
             <h2>Ribbon Cutting</h2>
             <h3>The Diamond shack</h3>
             <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
         </div>
-        <div class="weather">
+        <div class="home-div" id="weather">
             <h2>Weather</h2>
             <div id="weather-display">
                 <img id="weather-icon" alt="weather icon" src="images/weather-icon.png">
@@ -57,11 +59,11 @@
             <p>Wind Speed: <span id="speed">5</span> km/h</p>
             <p>Wind Chill: <span id="chill"></span></p>
         </div>
-        <div class="news">
+        <div class="home-div" id="news">
             <h2>News Release</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="spotlight-box">
+        <div class="home-div" id="spotlight-box">
             <div class="spot1">
                 <h2>Thankful Transport</h2>
                 <img class="icon" alt="Truck" src="images/truck.png">
@@ -78,7 +80,7 @@
                 <p>Over 1000 Plans!</p>
             </div>
         </div>
-        <div class="join">
+        <div class="home-div" id="join">
             <button class="join-us">Join Us</button>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
@@ -86,19 +88,15 @@
     <footer>
         <div class="footer-grid">
             <img class="footer-logo" src="images/smile.png" alt="smile">
-            <h3 class="footer-name">Timbuktu Chasmber of Commerce</h3>
+            <h3 class="footer-name">Timbuktu Chamber of Commerce</h3>
             <p class="address">10 Rue De La Paix Timbuktu, Mali 999</p>
             <p class="email">info@timbuktucc.org</p>
             <p class="number">+(223) 2070-2300</p>
             <a class="location" href="https://www.google.com/maps">Location Map</a>
         </div>
         <div class="line-box"></div>
-        <div class="copyright-box">
-            <p class="copyright">&copy;2022</p>
-            <p class="name">Yun-Ting Chang</p>
-            <p class="project">WDD230 Project</p>
-            <p class="updated">Last Modification:</p>
-            <p id="updated-time"></p>
+        <div>
+            <p>&copy;2022 | Yun-Ting Chang | WDD230 Project | Last Modification: <span id="updated-time"></span> | Last visited: <span id="last-visited"></span></p>
         </div>
     </footer>
     <script src="scripts/script.js"></script>
