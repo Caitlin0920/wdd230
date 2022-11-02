@@ -28,6 +28,9 @@ tr:first-child th, .highlight {
     background-color: var(--back);
     color: var(--forelight);
 }
+tr:nth-child(2), .lowest {
+    background-color: rgb(228, 250, 232);
+}
 
 th, td {
     padding: 7px 15px;
