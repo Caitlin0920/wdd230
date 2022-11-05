@@ -1,7 +1,7 @@
 @media only screen and (min-width: 600px) {
-    
+
     /* main */
-    main {
+    .home-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, auto);
@@ -67,6 +67,11 @@
     }
     .discover-grid-box {
         text-align: left;
+    }
+
+    /* join main */
+    .form-box {
+        width: 500px;
     }
 
     /* footer */
