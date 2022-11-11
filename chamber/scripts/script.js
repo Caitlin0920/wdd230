@@ -44,4 +44,4 @@ if (numVisits > 1) {
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits.toString());
-localStorage.setItem("last-visit-time", lastVisitDate);
+localStorage.setItem("last-visit-time", lastVisitDate)
