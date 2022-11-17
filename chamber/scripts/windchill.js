@@ -13,7 +13,7 @@ async function apiFetch() {
             console.log(data);
             displayResults(data);
         }else {
-            Error(await response.text());
+            throw Error(await response.text());
         }
     }catch (error) {
         console.log(error);
@@ -29,10 +29,15 @@ function displayResults(weatherData) {
 
     let iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     let desc = weatherData.weather[0].description;
+    let capDesc = desc.split(" ");
+
+    for (let i = 0; i < capDesc.length; i++) {
+        capDesc[i] = capDesc[i][0].toUpperCase() + capDesc[i].substring(1);
+    }
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    description.textContent = desc;
+    description.innerHTML = `<strong>${capDesc.join(" ")}</strong>`;
 
     if (tInF < 50 && sInMph > 3) {
         chill.textContent = String("feels like " + calculateWindChill(tInF, sInMph) + "°F");
