@@ -1,9 +1,18 @@
+
+const menuBtn = document.querySelector("#menuBtn");
+const menu = document.querySelector("#menu");
+let buttonText = menuBtn.textContent;
+
+menuBtn.addEventListener("click", function(){
+    if (buttonText === "☰"){
+        menuBtn.textContent = "X";
+    }else if (buttonText === "X") {
+        menuBtn.textContent = "☰";
+    }
+    menu.classList.toggle("responsive");
+});
+
 document.getElementById("updated-time").innerHTML = document.lastModified;
-
-
-function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-}
 
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
