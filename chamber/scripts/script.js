@@ -1,12 +1,11 @@
 
 const menuBtn = document.querySelector("#menuBtn");
 const menu = document.querySelector("#menu");
-let buttonText = menuBtn.textContent;
 
 menuBtn.addEventListener("click", function(){
-    if (buttonText === "☰"){
+    if (menuBtn.textContent === "☰"){
         menuBtn.textContent = "X";
-    }else if (buttonText === "X") {
+    }else if (menuBtn.textContent === "X") {
         menuBtn.textContent = "☰";
     }
     menu.classList.toggle("responsive");
