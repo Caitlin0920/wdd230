@@ -138,14 +138,28 @@ nav ul.responsive {
     position: absolute;
     top: 75%;
     right: 50px;
-    height: 22px;
-    width: 30%;
+    height: 25px;
+}
+.join-us-button, .hero-button {
     color: rgb(255, 250, 250);
     background-color: rgb(229, 77, 102);
     border-style: solid;
     border-width: 1px;
     border-radius: 7px;
     text-align: center;
+    width: 38%;
+    font-weight: bold;
+    text-shadow: 0 0 3px black;
+}
+.join-us-button {
+    margin-top: 1em;
+}
+.hero-button:hover, .join-us-button:hover {
+    background-color: white;
+    text-shadow: none;
+    box-shadow: 0 0 5px gray;
+    color: black;
+    cursor: pointer;
 }
 .icon {
     width: 30%;
@@ -163,6 +177,13 @@ nav ul.responsive {
 #weather-display h3 {
     margin-left: .5em;
     font-size: 22px;
+}
+#description {
+    margin: 5px auto;
+    font-size: larger;
+}
+#weather p {
+    margin: 10px;
 }
 #line {
     margin-left: 5%;
@@ -182,8 +203,14 @@ nav ul.responsive {
 .spot3, #join {
     display: none;
 }
+#news p, #event p, #join p {
+    padding: 0 1em;
+}
 
 /* discover main*/
+#discover-main {
+    margin: 0 2em;
+}
 #taiwan-icon {
     height: 25px;
 }
@@ -253,10 +280,14 @@ input:required {
     font-size: 16px;
     background-color: rgb(255, 250, 250);
     border-radius: 5px;
+}
+.join-submit:hover {
+    font-size: larger;
     cursor: pointer;
+    box-shadow: 0 0 5px gray;
 }
 .membership-benefits {
-    margin: 2em 2em;
+    margin: 2em auto;
     border: solid rgb(209, 142, 153);
     box-shadow: 0 0 15px gray;
     border-radius: 5px;
@@ -282,21 +313,29 @@ tr:nth-child(2),  tr:nth-child(4), tr:nth-child(6){
     background-color: rgb(255, 238, 241);
 }
 
+/* thankyou main */
+#letter-container {
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: black;
+    background-color: rgb(255, 250, 250);
+    box-shadow: 5px 5px black;
+}
+#letter-container h1 {
+    padding: 0 1em;
+}
+
 /* directory main */
 .icon-display {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-/*.icon-box {*/
-/*    margin: 1em 1em;*/
-/*    width: 40px;*/
-/*    border-width: 2px;*/
-/*    border-radius: 5px;*/
-/*    border-style: solid;*/
-/*    border-color: black;*/
-/*    box-shadow: 0 0 3px gray;*/
-/*}*/
 .icon-box button:hover {
     width: 55px;
 }

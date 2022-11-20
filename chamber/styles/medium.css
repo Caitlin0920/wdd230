@@ -3,25 +3,26 @@
     /* main */
     .home-main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 2em 1fr;
         grid-template-rows: repeat(6, auto);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
     #banner {
-        grid-column: 1/3;
+        grid-column: 1/5;
         grid-row: 1/2;
+        margin: 0;
     }
     #hero {
-        grid-column: 1/3;
+        grid-column: 1/5;
         grid-row: 2/3;
     }
     #news {
-        grid-column: 1/3;
+        grid-column: 1/5;
         grid-row: 3/4;
     }
     #spotlight-box {
-        grid-column: 1/3;
+        grid-column: 1/5;
         grid-row: 4/5;
         display: flex;
     }
@@ -38,7 +39,7 @@
     #join {
         display: block;
         grid-row: 5/6;
-        grid-column: 1/3;
+        grid-column: 1/5;
         height: auto;
     }
     .join-us {
@@ -52,12 +53,12 @@
         text-align: center;
     }
     #event {
-        grid-row: 5/6;
-        grid-column: 1/2;
+        grid-row: 6/7;
+        grid-column: 1/4;
     }
     #weather {
-        grid-row: 5/6;
-        grid-column: 2/3;
+        grid-row: 6/7;
+        grid-column: 4/5;
     }
 
     /* discover main */
