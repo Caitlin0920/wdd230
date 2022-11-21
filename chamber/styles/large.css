@@ -157,6 +157,18 @@
         text-align: center;
     }
 
-    /* footer */
-
+    /* contact us main */
+    .contact-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-main h1 {
+        grid-column: 1/3;
+    }
+    #contact-form-box {
+        grid-column: 1/2;
+    }
+    #contact-us-box {
+        grid-column: 2/3;
+    }
 }
