@@ -5,8 +5,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 2em 1fr;
         grid-template-rows: repeat(6, auto);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
     }
     #banner {
         grid-column: 1/5;
@@ -26,12 +26,12 @@
         grid-row: 4/5;
         display: flex;
     }
-    .spot1 {
+    #spot1 {
         height: 90%;
         margin-left: 10px;
         margin-right: 5px;
     }
-    .spot2 {
+    #spot2 {
         height: 90%;
         margin-left: 5px;
         margin-right: 10px;
