@@ -22,9 +22,6 @@ footer {
     background-color: #824C30;
     padding: 10px 0;
 }
-header {
-    object-fit: contain;
-}
 header div{
     margin-top: 10px;
     margin-right: 1em;
@@ -35,7 +32,6 @@ header div{
     width: 600px;
     line-height: 180px;
     text-align: center;
-
 }
 header div h1 {
     margin: 0 auto;
