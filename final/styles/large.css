@@ -83,10 +83,18 @@
     }
     /* about us main */
     #bountiful-des {
+        margin-bottom: 2em;
         padding: 0 2em;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        column-gap: 2em;
     }
     #bountiful-des img{
-        width: 40%;
+        width: 100%;
+    }
+    #bountiful-des p {
+        margin-top: 0;
+        margin-right: 3em;
     }
 
     /* footer */
