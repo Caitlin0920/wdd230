@@ -2,7 +2,7 @@
 const directoryData = './data.json';
 const gridButton = document.querySelector('.gridDisplay');
 const listButton = document.querySelector('.listDisplay');
-const display = document.querySelector('article')
+const display = document.querySelector('article');
 
 fetch(directoryData)
     .then(function (response) {

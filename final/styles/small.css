@@ -2,13 +2,14 @@
 
 body {
     margin: 0 auto;
+    min-width: 300px;
 }
 h1, h2, h3 {
     font-family: "Nerko One", Itim, Kalam;
     letter-spacing: 2px;
     color: #185F45;
 }
-h4, h5, h6, p, ul, li, tr {
+h4, h5, h6, p, ul, li, tr, label {
     font-family: Comfortaa, "Montserrat Alternates", Josefin Slab;
 }
 .header-box {
@@ -109,7 +110,7 @@ nav ul.responsive {
     margin: 0 0;
 }
 /* home main */
-.home-main {
+main {
     margin: 0 1em;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -119,13 +120,22 @@ nav ul.responsive {
     border-top-style: none;
     border-bottom-style: none;
 }
-.home-cards {
+.home-cards, .weather-box {
     margin: 1em 1em;
     padding: 1em 1em;
-    border-color: #090504;
+    border-color: #824C30;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     background-color: #FAC574;
+}
+.weather-box {
+    margin: 0;
+}
+#drink2 {
+    display: none;
+}
+#drink3 {
+    display: none;
 }
 #food-description {
     margin-top: 0;
@@ -137,9 +147,174 @@ nav ul.responsive {
     float: left;
     width: 100%;
     margin-bottom: 1em;
-    border-width: 1px;
-    border-style: solid;
 }
+.home-cards a, #order-ingredients a {
+    color: black;
+    text-shadow: 0 0 3px gray;
+    text-decoration: none;
+}
+.home-cards a:hover {
+    font-weight: 1000;
+    font-size: large;
+}
+#weather-card {
+    display: grid;
+    grid-template-rows: 10% 50% 30%;
+    grid-template-columns: repeat(2, auto);
+    text-align: center;
+    grid-gap: 1em;
+}
+#weather-card h2 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+#current-weather {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 25% 45% 30%;
+}
+#current-weather h3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+#current-weather p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: .5em auto;
+}
+#current-weather #description {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#current-weather #humidity {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#tomorrow-weather {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#next-day-weather {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+#tomorrow-weather h4, #next-day-weather h4 {
+    margin: 0;
+}
+#degree-now, #degree-tomorrow, #the-day-next-degree {
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0;
+}
+
+/* fresh-main */
+.fresh-main h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+#smoothie {
+    align-items: center;
+    width: 80%;
+}
+.form-box {
+    margin: 0 1em;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.blend-form input, .blend-form select {
+    border: none;
+    border-bottom: 1px solid black;
+}
+.blend-form input, .blend-form textarea, .blend-form select {
+    margin: 1em auto;
+    padding: 5px;
+    width: 90%;
+}
+#number:valid, #email:valid, #name:valid {
+    border-left: 8px solid #00ab00;
+}
+#number:invalid, #email:invalid, #name:invalid {
+    border-left: 8px solid #e50101;
+}
+.ingred-list:invalid {
+    border-left: 8px solid #e50101;
+}
+#formBtn {
+    width: 40%;
+    height: 30px;
+    border: 2px solid gray;
+    background-color: #FAC574;
+    color: #185F45;
+    font-weight: 1000;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#formBtn:hover {
+    background-color: #824C30;
+    color: white;
+    cursor: pointer;
+}
+.outputBox {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+}
+.outputBox #nutritionBox {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#nutritionBox h2 {
+    text-align: center;
+}
+#nutritionBox hr {
+    height: 3px;
+}
+#nutritionBox p{
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+#nutritionBox p span {
+    float: right;
+}
+#order-time {
+    text-align: right;
+    margin-bottom: 0;
+}
+#medium-p {
+    display: none;
+}
+#small-drinksNum {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 1000;
+    margin: .5em;
+}
+
+/* about us main */
+.aboutus-main {
+    padding: 1em;
+}
+.aboutus-main h1 {
+    margin-top: 0;
+}
+#bountiful-des img {
+    width: 100%;
+}
+#contact-form-box {
+    border: 2px solid black;
+}
+.aboutus-main iframe {
+    margin: 1em 0;
+    width: 100%;
+    height: 300px;
+}
+
+/* footer */
 footer {
     background-color: #824C30;
     color: white;
@@ -154,4 +329,7 @@ footer h3 {
     color: white;
     font-size: 24px;
     text-shadow: 0 0 5px #090504;
+}
+.footer-grid #map {
+    display: none;
 }
